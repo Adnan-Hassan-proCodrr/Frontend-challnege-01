@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* ### Primary
+
+- Blue 100: hsl(225, 100%, 94%)
+- Blue 700: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Blue 50: hsl(225, 100%, 98%)
+- Gray 600: hsl(224, 23%, 55%)
+- Blue 950: hsl(223, 47%, 23%) */
+:root{
+--primary-color:hsl(225, 100%, 94%);
+--primary1-color:hsl(245, 75%, 52%);
+--secondary-color: hsl(225, 100%, 98%);
+--secondary1-color:hsl(224, 23%, 55%) ;
+--text-color:hsl(223, 47%, 23%);
+}
+html,body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--primary-color);
+}
+.container{
+
+    max-width: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+
+}
+.heading{
+    padding: 1rem;
+}
+.para{
+    width: 300px;
+    padding: 1rem;
+    color:var(--secondary1-color);
+}
+.plan {
+    border: 1px solid white;
+    width: 330px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: var(--secondary-color);
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.plan img{
+    cursor: pointer;
+}
+.title h3{
+    margin-bottom:9px;
+}
+.title span{
+    color: var(--secondary1-color);
+}
+a{
+    color: var(--primary1-color);
+    font-weight: 600;
+}
+
+
+button{
+    cursor: pointer;
+    width: 280px;
+    padding: 13px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--primary1-color);
+    color: var(--primary-color);
+    font-weight:700;
+    margin-bottom: 1rem;
+}    
+#cancel-order{
+    color:var(--secondary1-color);
+    margin-bottom: 2rem;
+    cursor: pointer;
+    font-weight:600;
+}
